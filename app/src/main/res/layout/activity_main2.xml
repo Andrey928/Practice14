@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <EditText
+        android:id="@+id/editTextMail1"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="text"
+        android:onClick="saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+    <EditText
+        android:id="@+id/editTextName1"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name1" />
+
+    <EditText
+        android:id="@+id/editTextAge1"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Age1" />
+
+    <Button
+        android:id="@+id/sendClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="68dp"
+        android:text="Button"
+        android:onClick="sendClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge1" />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="209dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="66dp"
+        android:text="емаил"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name1"
+        android:layout_width="204dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="38dp"
+        android:text="имя"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMail1" />
+
+    <TextView
+        android:id="@+id/Age1"
+        android:layout_width="207dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="36dp"
+        android:text="возраст"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
